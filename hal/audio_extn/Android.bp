@@ -8,8 +8,8 @@ cc_defaults {
     include_dirs: [
         "external/tinyalsa/include",
         "external/tinycompress/include",
-        "hardware/qcom-caf/sm8350/audio/hal",
-        "hardware/qcom-caf/sm8350/audio/hal/msm8974",
+        "hardware/qcom-caf/sm6375-6.1/audio/primary-hal/hal",
+        "hardware/qcom-caf/sm6375-6.1/audio/primary-hal/hal/msm8974",
         "system/media/audio_route/include",
         "system/media/audio_utils/include",
     ],
