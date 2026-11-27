@@ -17,6 +17,7 @@ cc_defaults {
     header_libs: [
         "libhardware_headers",
         "qti_kernel_headers",
+        "device_kernel_headers",
     ],
 
     shared_libs: [
