@@ -211,3 +211,30 @@ cc_library_shared {
         "libexpat",
     ],
 }
+
+cc_library_shared {
+    name: "libbatterylistener",
+    vendor: true,
+
+    srcs: [
+        "battery_listener.cpp",
+    ],
+
+    cflags: [
+        "-DDTSHD_PARSER_ENABLED",
+    ],
+
+    shared_libs: [
+        "android.hardware.health@1.0",
+        "android.hardware.health@2.0",
+        "android.hardware.power@1.2",
+        "libbase",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+    ],
+
+    static_libs: [
+        "libhealthhalutils",
+    ],
+}
